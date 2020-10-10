@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            text-align: center;
+            border: 5px solid blue;
+        }
+
+        input {
+            width: 100px;
+            border: 2px solid red;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            width: 50%;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" >
+        <label>Number 1 : </label>
+        <input id="number1" required type="number" />
+        <br>
+        <label>Number 2 : </label>
+        <input id="number2" required type="number" />
+        <br>
+        <label>Result : </label>
+        <span id="result"></span>
+        <div class="buttons">
+            <button
+                onclick="document.getElementById('result').innerHTML=
+             Number(document.getElementById('number1').value)+Number(document.getElementById('number2').value)">ADD</button>
+            <button
+                onclick="document.getElementById('result').innerHTML=
+            Number(document.getElementById('number1').value)-Number(document.getElementById('number2').value)">SUB</button>
+            <button
+                onclick="document.getElementById('result').innerHTML=
+            Number(document.getElementById('number1').value)*Number(document.getElementById('number2').value)">MUL</button>
+            <button
+                onclick="document.getElementById('result').innerHTML=
+            Number(document.getElementById('number1').value)/Number(document.getElementById('number2').value)">DIV</button>
+        </div>
+    </div>
+</body>
+
+</html>
