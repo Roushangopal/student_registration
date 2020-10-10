@@ -45,6 +45,7 @@ echo '<table id="customers">
           <td> <font face="Arial">Address</font> </td>
           <td> <font face="Arial">Details</font> </td>
           <td> <font face="Arial">Documents</font> </td>
+          <td> <font face="Arial">Photo</font> </td>
       </tr>';
 
 if ($result = mysqli_query($con,$query)) {
@@ -59,6 +60,8 @@ if ($result = mysqli_query($con,$query)) {
         $field8name = $row["address"];
         $field9name = $row["category"];
         $field10name = $row["documents"];
+        $field11name = $row["img"];
+        
 
 
         
@@ -74,6 +77,7 @@ if ($result = mysqli_query($con,$query)) {
                   <td>'.$field8name.'</td>';?>
                   <td><a href='./detail.php?email=<?php echo $field1name ?>'>detail</a></td>
                   <td><a href='<?php echo $field10name?>'>documents</a></td>
+                  <td><a href='<?php echo $field11name?>'>img</a></td>
                   
              <?php echo '</tr>';
     }

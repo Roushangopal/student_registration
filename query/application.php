@@ -84,7 +84,7 @@ if($query_result)
                         ?>
                         <script>
                             window.alert("Application Recieved")
-                            window.location.href="../student.html"
+                            window.location.href="../index.html"
                         </script>
                         <?php
                     }
@@ -98,7 +98,7 @@ else{
     ?>
     <script>
         window.alert("Email id already exist!")
-        window.location.href="../student.html"
+        window.location.href="../index.html"
     </script>
     <?php
 }
